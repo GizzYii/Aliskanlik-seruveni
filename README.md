@@ -2,6 +2,8 @@
 
 "Yazılım, hayatın küçük zorluklarını sade çözümlerle iyileştirme sanatıdır."
 
+(en) - "A reward-based habit tracker for kids. A family-friendly growth tool where completing responsibilities motivates children with tangible rewards. 🎁✨"
+
 Alışkanlık Serüveni; çocuklar için sorumluluk kazanmayı bir ödül yolculuğuna dönüştüren, **kayıt gerektirmeyen**, gizlilik odaklı ve **ödül temelli** bir takip aracıdır. Bir ebeveynin gerçek hayat tecrübelerinden yola çıkarak, disiplini bir zorunluluktan çıkarıp motivasyon dolu bir yolculuğa dönüştürmeyi hedefler.
 
 ---
