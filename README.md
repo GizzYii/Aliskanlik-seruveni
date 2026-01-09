@@ -4,7 +4,7 @@
 
 ## 🎯 Özellikler
 
-*   **Çocuk Dostu Arayüz:** Canlı renkler, büyük butonlar ve eğlenceli animasyonlar.
+*   **Çocuk Dostu Arayüz:** Canlı renkler, büyük butonlar ve eğlenceli emojiler ve renk temaları.
 *   **Gamification (Oyunlaştırma):** Görevleri tamamlayarak puan toplama ve ödül kazanma sistemi.
 *   **Kişiselleştirme:**
     *   Farklı temalar (Uzay, Şeker Diyarı, Dinozor, vb.)
