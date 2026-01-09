@@ -13,7 +13,9 @@ const Header = ({
     setShowAIPanel,
     showAIPanel,
     setShowEmojiModal,
-    onLogout
+    onLogout,
+    activeTab,
+    setActiveTab
 }) => {
     const currentTheme = themes[profile?.theme || 'galaxy'] || themes.galaxy;
 
@@ -28,8 +30,8 @@ const Header = ({
     return (
         <header className="p-4 sticky top-0 z-30 transition-all duration-500">
             <div className={`max-w-2xl mx-auto space-y-4 rounded-[3rem] p-6 glass ${darkMode ? 'border-slate-700' : 'border-white/50'}`}>
-                <div className="flex justify-between items-center">
-                    <div className="flex items-center gap-4">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div className="flex items-center gap-4 w-full md:w-auto justify-center md:justify-start">
                         <button onClick={() => setShowEmojiModal(true)} className={`${currentTheme.secondary} w-14 h-14 rounded-2xl flex items-center justify-center text-4xl shadow-lg border-2 border-white relative`}>
                             {profile.avatar}
                             <Sparkles className="absolute -top-2 -right-2 w-6 h-6 text-yellow-500 animate-pulse" />
@@ -42,13 +44,22 @@ const Header = ({
                             </div>
                         </div>
                     </div>
-                    <div className="flex gap-2">
-                        <button onClick={() => setShowThemeModal(true)} className={`p-3 rounded-2xl ${currentTheme.light} ${currentTheme.accent}`}><Palette className="w-5 h-5" /></button>
-                        <button onClick={() => setShowAIPanel(!showAIPanel)} className={`p-3 rounded-2xl ${showAIPanel ? 'bg-indigo-100 text-indigo-600' : 'bg-slate-100 dark:bg-slate-700 dark:text-white'}`}><Wand2 className="w-5 h-5" /></button>
-                        <button onClick={() => setDarkMode(!darkMode)} className="p-3 rounded-2xl bg-slate-100 dark:bg-slate-700">
+
+                    <div className="grid grid-cols-2 md:flex gap-2 w-full md:w-auto">
+                        <button onClick={() => setActiveTab('tasks')} className={`p-3 rounded-2xl ${activeTab === 'tasks' ? currentTheme.primary + ' text-white' : 'bg-slate-100 dark:bg-slate-700 dark:text-slate-300'} flex items-center justify-center`}>
+                            <span className="text-xl">📋</span>
+                        </button>
+                        <button onClick={() => setActiveTab('rewards')} className={`p-3 rounded-2xl ${activeTab === 'rewards' ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white' : 'bg-slate-100 dark:bg-slate-700 dark:text-slate-300'} flex items-center justify-center`}>
+                            <span className="text-xl">🎁</span>
+                        </button>
+
+                        <button onClick={() => setShowThemeModal(true)} className={`p-3 rounded-2xl ${currentTheme.light} ${currentTheme.accent} flex items-center justify-center`}><Palette className="w-5 h-5" /></button>
+                        <button onClick={() => setShowAIPanel(!showAIPanel)} className={`p-3 rounded-2xl ${showAIPanel ? 'bg-indigo-100 text-indigo-600' : 'bg-slate-100 dark:bg-slate-700 dark:text-white'} flex items-center justify-center`}><Wand2 className="w-5 h-5" /></button>
+
+                        <button onClick={() => setDarkMode(!darkMode)} className="p-3 rounded-2xl bg-slate-100 dark:bg-slate-700 flex items-center justify-center">
                             {darkMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-slate-600" />}
                         </button>
-                        <button onClick={onLogout} className="p-3 rounded-2xl bg-red-50 dark:bg-red-900/20 text-red-500"><LogOut className="w-5 h-5" /></button>
+                        <button onClick={onLogout} className="p-3 rounded-2xl bg-red-50 dark:bg-red-900/20 text-red-500 flex items-center justify-center"><LogOut className="w-5 h-5" /></button>
                     </div>
                 </div>
 

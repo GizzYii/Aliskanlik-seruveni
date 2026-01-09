@@ -147,6 +147,8 @@ const App = () => {
         showAIPanel={showAIPanel}
         setShowEmojiModal={setShowEmojiModal}
         onLogout={handleLogout}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
       />
 
       {showAIPanel && (
