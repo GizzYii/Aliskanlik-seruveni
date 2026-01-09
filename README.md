@@ -11,7 +11,8 @@ Alışkanlık Serüveni; çocuklar için sorumluluk kazanmayı bir ödül yolcul
 | Ana Ekran | Görev Takibi | Tema Seçimi |
 | :---: | :---: | :---: |
 | ![Ana Ekran](https://via.placeholder.com/300x600?text=Ana+Ekran+Görseli) | ![Görevler](https://via.placeholder.com/300x600?text=Görev+Takibi+Görseli) | ![Temalar](https://via.placeholder.com/300x600?text=Tema+Seçimi+Görseli) |
-*Not: Kendi ekran görüntülerinizi projeye ekledikten sonra bu linkleri güncelleyebilirsiniz.*
+
+https://aliskanlik-seruveni.onrender.com/
 
 ---
 
