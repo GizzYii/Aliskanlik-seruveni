@@ -32,7 +32,7 @@ https://aliskanlik-seruveni.onrender.com/
 Bu proje, şu an en baz (minimum viable product) haliyle yayındadır ve aktif bir gelişim sürecindedir.
 
 ### 1. Veri Yönetimi ve Gizlilik (Local-First)
-* **Bilinçli Sadelik:** Çocukların rutinleri gibi hassas veriler internete çıkarılmaz. Veriler tamamen tarayıcınızın `Local Storage` alanında saklanır. 
+* **Bilinçli Sadelik:** Çocukların rutinleri gibi hassas veriler internete çıkarılmaz. 
 * **Hız:** Sunucu trafiği olmadığı için uygulama her cihazda anında çalışır.
 
 ### 2. Yapay Zeka (Gemini AI) Entegrasyonu
